@@ -88,7 +88,7 @@ func GeneratePDF() (bytes.Buffer, error) {
 
 	m.Row(10, func() {
 		m.Col(12, func() {
-			m.Text("Invoice BANANA-123456789", props.Text{
+			m.Text("หมายเลข Invoice BANANA-123456789", props.Text{
 				Top:   3,
 				Style: consts.Bold,
 				Align: consts.Center,

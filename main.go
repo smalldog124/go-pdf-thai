@@ -10,7 +10,7 @@ import (
 func main() {
 	engine := gin.Default()
 
-	engine.GET("/order/bile", func(ctx *gin.Context) {
+	engine.GET("/order/bill", func(ctx *gin.Context) {
 		bilePDF, err := bill.GeneratePDF()
 		if err != nil {
 			ctx.JSON(http.StatusInternalServerError, gin.H{"error": err})
